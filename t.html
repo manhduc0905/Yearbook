@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỉ yếu 12 Tin</title>
+    <link rel="stylesheet" href="t.css">
+    <script src="t.js" defer></script> <!-- Added defer -->
+</head>
+<body>
+    <div class="container">
+        <h1>Kỉ yếu 12 Tin</h1>
+        <h2>Khóa 22-25</h2>
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('students')">Cá nhân</button>
+            <button class="tab-button" onclick="showTab('group-photos')">Tập thể</button>
+        </div>
+        
+        <div id="students" class="tab-content">
+            <div class="gallery" id="students-gallery">
+                <!-- anh ca nhan -->
+            </div>
+            <button onclick="addStudent()">Thêm học sinh</button>
+        </div>
+
+        <div id="group-photos" class="tab-content" style="display: none;">
+            <h2>Nhóm</h2>
+            <div class="gallery" id="groups-gallery"> <!-- Fixed ID -->
+                <!-- anh group -->
+            </div>
+            <button onclick="addGroupPhoto()">Thêm ảnh</button>
+        </div>
+    </div>
+</body>
+</html>
